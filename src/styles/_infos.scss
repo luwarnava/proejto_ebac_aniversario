@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.infos {
+    padding: 80px 30px;
+    margin-bottom: 0px;
+
+
+    &--event {
+        background-image: linear-gradient(#8E7AB5, #B784B7, #8E7AB5);
+        max-width: 50%;
+        margin-left: 26%;
+        background-color: rgba(250, 250, 250, 0.1);
+            color: #EEA5A6;
+            box-shadow: 0 0 150px rgb(248, 205, 205, 1);
+            border: 1px solid;
+            border-radius: 20px;
+    }
+
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__detail {
+        font-family: "Montserrat", sans-serif;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__detail{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}

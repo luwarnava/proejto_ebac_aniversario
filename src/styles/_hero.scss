@@ -1,0 +1,65 @@
+@use 'variaveis';
+
+.hero {
+    padding-top: 55px;
+    font-family: "Sofadi One", system-ui;
+    
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: 2.6;
+        margin-bottom: 50px;
+    }
+
+    
+
+    
+    .container {
+        text-align: center;     
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &__cake {
+            max-width: 200px;
+            animation: move 2s ease-in-out infinite;
+
+            @keyframes move {
+                0% {
+                    transform: rotate(5deg);
+                }
+                50% {
+                    transform: rotate(10deg);
+                }
+                100% {
+                    transform: rotate(5deg);
+                }
+            }
+        }
+        
+        span {
+            font-size: 80px;
+            line-height: 56px;
+            font-weight: 800;
+            text-align: center;
+        }
+        &__confetti {
+            max-width: 220px;
+            animation: girar 2s ease-in-out infinite;
+    
+            @keyframes girar {
+                0% {
+                  transform: rotate(-90deg);
+                }
+                50% {
+                  transform: rotate(-100deg);
+                }
+                100% {
+                    transform: rotate(-90deg);
+                }
+              }
+            
+        }
+    }
+}
