@@ -2,6 +2,7 @@
 
 .hero {
     padding-top: 55px;
+    padding-bottom: 20px;
     font-family: "Sofadi One", system-ui;
     
     h1 {
@@ -61,5 +62,29 @@
               }
             
         }
+
+
+       
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            
+            span {
+                font-size: 40px;
+            }
+
+        }
+    
+        @media (max-width: 1024px) {
+            max-width: 90%;
+        }
     }
+
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    
 }

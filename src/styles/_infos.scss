@@ -1,8 +1,8 @@
 @use 'variaveis';
 
 .infos {
-    padding: 80px 30px;
-    margin-bottom: 0px;
+    padding: 40px 30px;
+    
 
 
     &--event {
@@ -36,14 +36,13 @@
         }
     }
 
-    @media (max-width: 640px) {
-        .container {
-            display: block;
-        }
+    @media (max-width: 1024px) {
+        max-width: 60%;
+        margin-left: 20%;
+    }
 
-        &__detail{
-            margin-right: 0;
-            margin-bottom: 16px;
-        }
+    @media (max-width: 576px) {
+        max-width: 70%;
+        margin-left: 14%;
     }
 }
